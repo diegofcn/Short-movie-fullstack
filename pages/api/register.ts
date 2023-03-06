@@ -12,7 +12,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
         const exisitingUser = await prismadb.user.findUnique({
             where: {
-                email,
+                email
             }
         });
         if(exisitingUser) {
