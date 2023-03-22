@@ -1,4 +1,4 @@
-import NavbarItem from "./Navbaritem"
+import NavbarItem from "./NavbarItem"
 import MobileMenu from "./MobileMenu"
 import AccountMenu from "./AccountMenu"
 import { BsChevronDown, BsSearch, BsBell} from 'react-icons/bs'
