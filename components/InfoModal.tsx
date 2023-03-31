@@ -58,6 +58,7 @@ const InfoModal: React.FC<InfoModalProps> = ({ visible, onClose }) => {
                     </div>
                 </div>
                 <div className='px-12 py-8'>
+                    <div className='flex gap-4'>
                     <p className='text-green-400 font-semibold text-lg'>
                         New
                     </p>
@@ -67,9 +68,11 @@ const InfoModal: React.FC<InfoModalProps> = ({ visible, onClose }) => {
                     <p className='text-white text-lg'>
                         {data?.genre}
                     </p>
-                    <p className='text-white text-lg'>
+                    </div>
+                    <p className='text-white text-lg mt-4'>
                         {data?.description}
                     </p>
+
                 </div>
             </div>
 
