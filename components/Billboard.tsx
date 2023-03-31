@@ -18,7 +18,7 @@ const Billboard = () => {
         <iframe 
         className='
          w-full
-        h-[59vw]
+        h-[56.25vw]
         object-cover
         brightness-[60%]'
         src={`https://www.youtube.com/embed/${data?.videoUrl}?autoplay=1&mute=1&controls=0&showinfo=0`} allow='autoplay'
