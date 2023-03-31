@@ -20,9 +20,8 @@ const Watch = () => {
           {data?.title}
         </p>
       </nav>
-        <video autoPlay controls
-        className='h-full w-full'
-        src={data?.videoUrl}></video>
+      <iframe className='h-full w-full' src={`https://www.youtube.com/embed/${data?.videoUrl}?autoplay=1`} allow='autoplay' allowFullScreen={true}></iframe>
+        
     </div>
   )
 }

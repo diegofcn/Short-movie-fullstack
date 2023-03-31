@@ -38,10 +38,11 @@ export default function Home() {
       <Navbar />
       <Billboard />
       <div className="pb-40">
-        <MovieList title="Trending Now" data={movies}/>
         <MovieList title="My List" data={favorites}/>
-        <MovieListByGenre genre="Action" />
-        <MovieListByGenre genre="Comedy" />
+        <MovieList title="Trending Now" data={movies}/>
+        <MovieListByGenre genre="Horror" />
+        <MovieListByGenre genre="Sci-Fi" />
+        <MovieListByGenre genre="Drama" />
       </div>
       
     </>

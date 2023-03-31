@@ -15,21 +15,15 @@ const Billboard = () => {
 
   return (
     <div className='relative h-[56.25vw]'>
-        <video 
+        <iframe 
         className='
-        w-full
-        h-[56.25vw]
+         w-full
+        h-[59vw]
         object-cover
-        brightness-[60%]
-        '
-        autoPlay
-        muted
-        loop
-        poster={data?.thumbnailUrl}
-        src={data?.videoUrl}>
+        brightness-[60%]'
+        src={`https://www.youtube.com/embed/${data?.videoUrl}?autoplay=1&mute=1&controls=0&showinfo=0`} allow='autoplay'
+        ></iframe>
 
-
-        </video>
         <div className='absolute top-[30%] md:top-[40%] ml-4 md:ml-16'>
             <p className='
             text-white 
