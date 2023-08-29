@@ -27,7 +27,7 @@ const MovieListByGenre: React.FC<MovieListByGenreProps> = ({ genre }) => {
   return (
     <div className="px-4 md:px-12 mt-4 space-y-8">
         <div>
-            <p className="text-white text-md md:text-xl lg:text-2xl font-semibold mb-4">
+            <p className="text-white text-md md:text-xl lg:text-2xl font-sans py-8 font-bold mb-4">
                 {genre}
             </p>
             <div className="grid grid-cols-4 gap-2">

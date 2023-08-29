@@ -15,7 +15,7 @@ const MovieCard: React.FC<MovieCardProps> = ({ data }) => {
     const { openModal } = useInfoModal();
 
   return (
-    <div className='group bg-zinc-900 col-span relative h-[12vw]'>
+    <div className='group bg-zinc-900 col-span relative h-[12vw] rounded-2xl'>
         <img 
         className="
         cursor-pointer
@@ -52,7 +52,7 @@ const MovieCard: React.FC<MovieCardProps> = ({ data }) => {
             src={data.thumbnailUrl} alt="thumbnail" />
             <div className='
             z-10
-            bg-zinc-800
+            bg-zinc-700
             p-2
             lg:p-4
             absolute
@@ -66,7 +66,7 @@ const MovieCard: React.FC<MovieCardProps> = ({ data }) => {
                     <div 
                     className='cursor-pointer w-6 h-6 lg:w-10 lg:h-10 bg-white rounded-full flex justify-center items-center transition hover:bg-neutral-300'
                     onClick={() => router.push(`/watch/${data?.id}`)}>
-                        <BsFillPlayCircleFill size={34}/>
+                        <BsFillPlayCircleFill size={34} className='text-zinc-700'/>
                     </div>
                     <FavoriteButton movieId={data?.id}/>
                     <div onClick={() => openModal(data?.id)} className='cursor-pointer ml-auto group/item w-6 h-6 lg:w-10 lg:h-10 border-white border-2 rounded-full flex justify-center items-center transition hover:border-neutral-300'>
