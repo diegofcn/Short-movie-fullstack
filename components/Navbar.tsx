@@ -44,9 +44,9 @@ const Navbar = () => {
         items-center
         transition
         duration-500
-        ${showBackground ? 'bg-zinc-900 bg-opacity-90' : ''}
+        ${showBackground ? 'bg-zinc-900 bg-opacity-40' : ''}
         `}>
-            <img className="h-4 lg:h-7" src="/images/logo.png" alt="logo" />
+            <img className="h-8 lg:h-12" src="/images/logo.png" alt="logo" />
             <div className="
             flex-row
             ml-8
@@ -55,11 +55,12 @@ const Navbar = () => {
             lg:flex
             ">
                 <NavbarItem label="Home"/>
-                <NavbarItem label="Series"/>
-                <NavbarItem label="Films"/>
-                <NavbarItem label="New"/>
-                <NavbarItem label="My List"/>
-                <NavbarItem label="Browse by Languages"/>
+                <NavbarItem label="Movies"/>
+                <NavbarItem label="Watchlist"/>
+                <NavbarItem label="Drama" />
+                <NavbarItem label="Horror" />
+                <NavbarItem label="Sci-Fi" />
+
             </div>
             <div onClick={toggleMobileMenu} className="lg:hidden flex flex-row items-center gap-2 ml-8 cursor-pointer relative">
                 <p className="text-white text-sm">Browse</p>

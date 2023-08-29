@@ -45,7 +45,7 @@ const Auth = () => {
     }, [email, name, password, login]);
 
     return (
-        <div className="relative h-full w-full bg-[url('/images/hero.jpg')] bg-no-repeat bg-center bg-fixed bg-cover">
+        <div className="relative h-full w-full bg-[url('/images/hero.png')] bg-no-repeat bg-center bg-fixed bg-cover">
             <div className="bg-black w-full h-full lg:bg-opacity-50">
                 <nav className="px-12 py-5">
                     <img src="/images/logo.png" alt="logo" className="h-12"/>
@@ -81,7 +81,7 @@ const Auth = () => {
                             <button onClick={variant === 'login' ? login : register} className="bg-red-600 py-3 text-white rounded-md w-full mt-10 hover:bg-red-700 transition">
                                 {variant === 'login' ? 'Login' : 'Sign up'}
                             </button>
-                            <div className="flex flex-row items-center gap-4 mt-8 justify-center">
+                            {/* <div className="flex flex-row items-center gap-4 mt-8 justify-center">
                                     <div
                                     onClick={() => signIn('google', { callbackUrl: '/profiles'})}
                                     className="
@@ -114,7 +114,7 @@ const Auth = () => {
                                     >
                                         <FaGithub size={30}/>
                                     </div>
-                            </div>
+                                </div> */}
                             <p className="text-neutral-500 mt-12">
                                 { variant === 'login' ? 'First time using Netflix' : 'Already have an account?'}
                                 <span onClick={toggleVariant} className="text-white ml-1 hover:underline cursor-pointer">

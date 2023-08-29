@@ -36,10 +36,11 @@ export default function Home() {
     <>
       <InfoModal visible={isOpen} onClose={closeModal}/>
       <Navbar />
+      <div className="py-24">
       <Billboard />
+      </div>
       <div className="pb-40">
         <MovieList title="My List" data={favorites}/>
-        <MovieList title="All Movies" data={movies}/>
         <MovieListByGenre genre="Horror" />
         <MovieListByGenre genre="Sci-Fi" />
         <MovieListByGenre genre="Drama" />
